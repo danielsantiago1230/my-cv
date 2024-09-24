@@ -13,7 +13,7 @@ const Header: React.FC = () => {
                     Santiago Quintero
                 </h1>
                 <p className="text-lg md:text-xl lg:text-2xl mt-2">Full-Stack Developer</p>
-                <p className="text-sm md:text-base lg:text-lg mt-1">
+                <p className="text-sm md:text-base lg:text-lg mt-1 text-center md:text-left">
                     React Native | Django | React | Python | TypeScript | JavaScript | Vue | Nuxt | HTML | CSS | Mobile Apps | Web Apps
                 </p>
                 <div className="mt-6 flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 text-sm md:text-base">
