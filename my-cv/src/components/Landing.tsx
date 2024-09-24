@@ -7,7 +7,7 @@ const Landing: React.FC = () => {
             {/* Central Animated Circle */}
             <div className="relative flex flex-col items-center justify-center w-80 h-80 md:w-96 md:h-96 bg-yellow-500 rounded-full animate-pulse p-6">
 
-                {/* Your Name */}
+                {/* My Name section */}
                 <h1
                     className="text-4xl md:text-5xl font-heading text-center animate-fadeIn"
                     style={{ animationDelay: '0ms' }}
