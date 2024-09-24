@@ -1,4 +1,3 @@
-// src/components/Education.tsx
 import React from 'react';
 import Card from './Card';
 
