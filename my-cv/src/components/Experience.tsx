@@ -11,7 +11,8 @@ const Experience: React.FC = () => {
                     title="Full Stack Developer"
                     links={[
                         { label: "Flux EV City", url: "https://app.fluxev.city/" },
-                        { label: "Flux EV App Store", url: "https://apps.apple.com/ec/app/flux-ev/id1603001875" }
+                        { label: "Flux EV App Store", url: "https://apps.apple.com/ec/app/flux-ev/id1603001875" },
+                        { label: "Alluxi", url: "https://www.alluxi.com/" }
                     ]}
                     subtitle="Mobile Flux app & Flux Web app - Alluxi"
                     date="Nov 2022 - Present"
@@ -30,7 +31,8 @@ const Experience: React.FC = () => {
                 <Card
                     title="Back End Developer - Alluxi"
                     links={[
-                        { label: "Subasta La Silla", url: "https://www.subastalasilla.com/" }
+                        { label: "Subasta La Silla", url: "https://www.subastalasilla.com/" },
+                        { label: "Alluxi", url: "https://www.alluxi.com/" }
                     ]}
                     subtitle="Horsebook"
                     date="July 2023 - December 2023"
@@ -46,7 +48,8 @@ const Experience: React.FC = () => {
                 <Card
                     title="Front End Developer - Alluxi"
                     links={[
-                        { label: "Garre Web App", url: "http://garre-front-stage.s3-website-us-east-1.amazonaws.com/" }
+                        { label: "Garre Web App", url: "http://garre-front-stage.s3-website-us-east-1.amazonaws.com/" },
+                        { label: "Alluxi", url: "https://www.alluxi.com/" }
                     ]}
                     subtitle="Garre Web Application"
                     date="May 2022 - Nov 2022"
