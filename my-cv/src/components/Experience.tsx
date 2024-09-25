@@ -9,6 +9,10 @@ const Experience: React.FC = () => {
             <div className="space-y-6">
                 <Card
                     title="Full Stack Developer"
+                    links={[
+                        { label: "Flux EV City", url: "https://app.fluxev.city/" },
+                        { label: "Flux EV App Store", url: "https://apps.apple.com/ec/app/flux-ev/id1603001875" }
+                    ]}
                     subtitle="Mobile Flux app & Flux Web app - Alluxi"
                     date="Nov 2022 - Present"
                     description={[
@@ -24,7 +28,10 @@ const Experience: React.FC = () => {
                 />
 
                 <Card
-                    title="Back End Developer"
+                    title="Back End Developer - Alluxi"
+                    links={[
+                        { label: "Subasta La Silla", url: "https://www.subastalasilla.com/" }
+                    ]}
                     subtitle="Horsebook"
                     date="July 2023 - December 2023"
                     description={[
@@ -37,7 +44,10 @@ const Experience: React.FC = () => {
                 />
 
                 <Card
-                    title="Front End Developer"
+                    title="Front End Developer - Alluxi"
+                    links={[
+                        { label: "Garre Web App", url: "http://garre-front-stage.s3-website-us-east-1.amazonaws.com/" }
+                    ]}
                     subtitle="Garre Web Application"
                     date="May 2022 - Nov 2022"
                     description={[
