@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Landing from './components/Landing';
+import Foater from './components/Foater';
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
           <Experience />
           <Education />
         </main>
+        <Foater />
       </section>
     </div>
   );

@@ -10,7 +10,7 @@ const Experience: React.FC = () => {
                 <Card
                     title="Full Stack Developer"
                     links={[
-                        { label: "Flux EV City", url: "https://app.fluxev.city/" },
+                        { label: "Flux EV Web App", url: "https://app.fluxev.city/" },
                         { label: "Flux EV App Store", url: "https://apps.apple.com/ec/app/flux-ev/id1603001875" },
                         { label: "Alluxi", url: "https://www.alluxi.com/" }
                     ]}
