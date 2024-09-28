@@ -8,13 +8,13 @@ const Experience: React.FC = () => {
 
             <div className="space-y-6">
                 <Card
-                    title="Full Stack Developer"
+                    title="Full Stack Developer - Alluxi"
                     links={[
                         { label: "Flux EV Web App", url: "https://app.fluxev.city/" },
                         { label: "Flux EV App Store", url: "https://apps.apple.com/ec/app/flux-ev/id1603001875" },
                         { label: "Alluxi", url: "https://www.alluxi.com/" }
                     ]}
-                    subtitle="Mobile Flux app & Flux Web app - Alluxi"
+                    subtitle="Mobile Flux app & Flux Web app"
                     date="Nov 2022 - Present"
                     description={[
                         'Developed and maintained the Flux mobile app using React Native, integrating features like Google Maps for charger points and car rental stations, Stripe for payment processing, and Firebase for user authentication and databases.',
