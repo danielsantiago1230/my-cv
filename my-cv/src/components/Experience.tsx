@@ -17,10 +17,14 @@ const Experience: React.FC = () => {
                     subtitle="Mobile Flux app & Flux Web app - Alluxi"
                     date="Nov 2022 - Present"
                     description={[
-                        'Developed and maintained the Flux mobile app using React Native, integrating features like Google Maps for charger points and car rental stations, Stripe for payment processing, and Firebase for user login and databases.',
+                        'Developed and maintained the Flux mobile app using React Native, integrating features like Google Maps for charger points and car rental stations, Stripe for payment processing, and Firebase for user authentication and databases.',
                         'Implemented a real-time chat feature using Twilio, along with SMS code validation.',
                         "Successfully launched the Flux web app, mirroring the mobile app's features for cross-platform consistency.",
                         'Spearheaded the development of the Flux Fleet mobile admin app for managing charger stations, vehicle data, and user support.',
+                        'Integrated OAuth-based smart car connectivity in the backend using Django, creating APIs to retrieve battery levels, lock/unlock vehicles, and access geolocation data, utilized by the fleet admin app.',
+                        'Implemented a secure access system in the backend to generate one-time codes for opening vaults containing car keys, consumed by the fleet admin app.',
+                        'Integrated a driver\'s license validation system in both the Flux app and web app to ensure driver eligibility.',
+                        'Developed an insurance management integration, allowing users to upload and manage insurance documents within the app.',
                         'Collaborated with third-party company Bundee for booking system integration.',
                         'Managed HubSpot for contact information management.',
                         'Ensured seamless performance across both iOS and Android platforms.',
