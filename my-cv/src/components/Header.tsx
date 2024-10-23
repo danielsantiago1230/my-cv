@@ -29,13 +29,13 @@ const Header: React.FC = () => {
 
                     {/* Phone Link */}
                     <a
-                        href="tel:+573112385219"
+                        href="tel:+573137758974"
                         className="hover:underline flex items-center"
                         aria-label="Phone"
                     >
                         {/* Phone SVG */}
                         <PhoneIcon className="w-5 h-5 text-green-500"/>
-                        <span className="ml-2">+573112385219</span>
+                        <span className="ml-2">+573137758974</span>
                     </a>
 
                     {/* LinkedIn Link */}
