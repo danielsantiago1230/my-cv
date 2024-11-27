@@ -4,6 +4,9 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Landing from './components/Landing';
 import Foater from './components/Foater';
+import ProfessionalSummary from './components/ProfessionalSummary';
+import Skills from './components/Skills';
+
 
 const App: React.FC = () => {
   return (
@@ -15,6 +18,8 @@ const App: React.FC = () => {
       <section id="cv-section">
         <Header />
         <main className="p-4 md:p-8 lg:p-12">
+          <ProfessionalSummary />
+          <Skills />
           <Experience />
           <Education />
         </main>
