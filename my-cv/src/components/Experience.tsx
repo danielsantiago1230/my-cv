@@ -1,10 +1,18 @@
 import React from 'react';
 import Card from './Card';
 
-const Experience: React.FC = () => {
+interface ExperienceProps {
+    years: number;
+    months: number;
+}
+
+const Experience: React.FC<ExperienceProps> = ({ years, months }) => {
     return (
         <section className="my-8 px-4 md:px-8 lg:px-16">
-            <h2 className="text-4xl font-heading font-bold mb-8 text-center md:text-left">Work Experience</h2>
+            <h2 className="text-4xl font-heading font-bold mb-2 text-center md:text-left">Work Experience</h2>
+            <h3 id="time" className="text-xl font-heading font-bold mb-8 text-center md:text-left">
+                ({years} years{months > 0 ? ` & ${months} months` : ''})
+            </h3>
             <div className="space-y-6">
                 <Card
                     title="Full Stack Developer at Alluxi"
