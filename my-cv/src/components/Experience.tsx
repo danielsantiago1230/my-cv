@@ -17,6 +17,24 @@ const Experience: React.FC<ExperienceProps> = ({ years, months }) => {
                 <Card
                     title="Full Stack Developer at Alluxi"
                     links={[
+                        { label: "WMA Web App", url: "https://intensity.virtualproshops.com/us" },
+                        { label: "Alluxi", url: "https://www.alluxi.com/" }
+                    ]}
+                    subtitle="WMA Web App"
+                    date="Dec 2024 - Present"
+                    description={[
+                        'Contributed to the WMA Web App, built with Medusa.js for both frontend and backend, preparing the app for launch.',
+                        'Developed responsive components such as product modals, collections, and size charts, implementing Figma-based designs.',
+                        'Integrated AWS S3 for dynamic media handling and optimized compatibility with Next.js 13.',
+                        'Enhanced Medusa APIs with features like order filters (processed_by_wma) and student ID validation.',
+                        'Streamlined collections logic, enabling dynamic previews and modals for product selection.',
+                        'Fixed critical bugs and conducted extensive staging tests to validate features before production deployment.',
+                    ]}
+                />
+
+                <Card
+                    title="Full Stack Developer at Alluxi"
+                    links={[
                         { label: "Flux EV Web App", url: "https://app.fluxev.city/" },
                         { label: "Flux EV App Store", url: "https://apps.apple.com/ec/app/flux-ev/id1603001875" },
                         { label: "Alluxi", url: "https://www.alluxi.com/" }

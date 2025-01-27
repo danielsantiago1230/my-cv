@@ -12,7 +12,7 @@ const Skills: React.FC = () => {
                 date=""
                 description={[
                     'Core Skills: JavaScript, TypeScript, Python, SQL, NoSQL',
-                    'Frameworks: React, React Native, Django, Nuxt.js, Next.js, Vue.js',
+                    'Frameworks:  Next.js, React, React Native, Django, Nuxt.js, Vue.js',
                     'Tools & Platforms: Git, GitHub, Firebase, Stripe, Twilio, HubSpot',
                     'Frontend Development: TailwindCSS, Bootstrap, Responsive Design, REST APIs',
                     'Additional Skills: Authentication and Authorization (OAuth, JWT), Cloud Integrations, Unit and Integration Testing, Bilingual (Spanish and English)'
