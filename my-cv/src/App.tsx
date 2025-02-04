@@ -17,7 +17,7 @@ const App: React.FC = () => {
   const months = differenceInMonths(currentDate, startDate) % 12;
 
   return (
-    <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
+    <div className="min-h-screen bg-gradient-to-r from-brand-dark to-brand-accent-dark text-white">
       {/* Landing Section */}
       <Landing />
 

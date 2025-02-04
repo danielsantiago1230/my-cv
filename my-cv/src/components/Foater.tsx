@@ -7,12 +7,12 @@ import PhoneIcon from './icons/PhoneIcon';
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-gradient-to-r from-brand-dark to-brand-accent-dark text-white p-4 lg:p-8">
+        <footer className="bg-brand-dark text-white p-4 lg:p-8">
             <div className="container mx-auto flex flex-col items-center md:items-start">
                 <h2 className="text-xl md:text-2xl font-heading font-bold tracking-tight text-brand-primary">
                     Santiago Quintero
                 </h2>
-                <p className="text-base md:text-lg mt-1 text-brand-accent">
+                <p className="text-base md:text-lg mt-1 text-white">
                     Full-Stack Developer
                 </p>
                 <div className="mt-6 flex flex-wrap justify-center gap-4 md:gap-6 text-sm md:text-base">
