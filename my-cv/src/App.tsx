@@ -25,7 +25,7 @@ const App: React.FC = () => {
       <section id="cv-section">
         <Header />
         <main className="p-4 md:p-8 lg:p-12">
-          <ProfessionalSummary years={years} />
+        <ProfessionalSummary years={years} />
           <Skills />
           <Experience years={years} months={months} />
           <Education />

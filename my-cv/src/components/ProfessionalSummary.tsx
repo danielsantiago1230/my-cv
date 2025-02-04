@@ -7,7 +7,7 @@ interface ExperienceProps {
 
 const ProfessionalSummary: React.FC<ExperienceProps> = ({ years }) => {
     return (
-        <section className="my-8 px-4 md:px-8 lg:px-16">
+        <section className="my-8 px-4 md:px-8 lg:px-16" id="summary">
             <h2 className="text-4xl font-heading font-bold mb-8 text-center md:text-left">Professional Summary</h2>
             <div className="space-y-6">
                 <Card
