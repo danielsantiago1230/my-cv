@@ -4,6 +4,8 @@ import LinkedInIcon from './icons/LinkedInIcon';
 import GitHubIcon from './icons/GitHubIcon';
 import EmailIcon from './icons/EmailIcon';
 import PhoneIcon from './icons/PhoneIcon';
+import { copyToClipboard } from '../utils/clipboard';
+import { toast } from 'react-toastify';
 
 const Footer: React.FC = () => {
     return (
@@ -16,15 +18,22 @@ const Footer: React.FC = () => {
                     Full-Stack Developer
                 </p>
                 <div className="mt-6 flex flex-wrap justify-center gap-4 md:gap-6 text-sm md:text-base">
-                    {/* Email Link */}
-                    <a
-                        href="mailto:danielsantiago1230@gmail.com"
+                    {/* Email Button */}
+                    <button
+                        onClick={async () => {
+                            const success = await copyToClipboard('danielsantiago1230@gmail.com');
+                            if (success) {
+                                toast.success('Email copied to clipboard!');
+                            } else {
+                                toast.error('Failed to copy email');
+                            }
+                        }}
                         className="hover:text-brand-primary transition-colors flex items-center"
-                        aria-label="Email"
+                        aria-label="Copy email to clipboard"
                     >
                         <EmailIcon className="w-5 h-5 text-brand-primary mr-2" />
                         <span>danielsantiago1230@gmail.com</span>
-                    </a>
+                    </button>
 
                     {/* Phone Link */}
                     <a

@@ -7,6 +7,8 @@ import Foater from './components/Foater';
 import ProfessionalSummary from './components/ProfessionalSummary';
 import Skills from './components/Skills';
 import { differenceInMonths, differenceInYears } from 'date-fns';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const App: React.FC = () => {
@@ -32,6 +34,12 @@ const App: React.FC = () => {
         </main>
         <Foater />
       </section>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={3000}
+        hideProgressBar
+        toastClassName="bg-brand-accent-dark text-white rounded-md shadow-lg"
+      />
     </div>
   );
 };
