@@ -7,6 +7,8 @@ import Foater from './components/Foater';
 import ProfessionalSummary from './components/ProfessionalSummary';
 import Skills from './components/Skills';
 import { differenceInMonths, differenceInYears } from 'date-fns';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const App: React.FC = () => {
@@ -17,7 +19,7 @@ const App: React.FC = () => {
   const months = differenceInMonths(currentDate, startDate) % 12;
 
   return (
-    <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
+    <div className="min-h-screen bg-gradient-to-r from-brand-dark to-brand-accent-dark text-white">
       {/* Landing Section */}
       <Landing />
 
@@ -25,13 +27,19 @@ const App: React.FC = () => {
       <section id="cv-section">
         <Header />
         <main className="p-4 md:p-8 lg:p-12">
-          <ProfessionalSummary years={years} />
+        <ProfessionalSummary years={years} />
           <Skills />
           <Experience years={years} months={months} />
           <Education />
         </main>
         <Foater />
       </section>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={3000}
+        hideProgressBar
+        toastClassName="bg-brand-accent-dark text-white rounded-md shadow-lg"
+      />
     </div>
   );
 };

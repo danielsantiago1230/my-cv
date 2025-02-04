@@ -1,65 +1,81 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 // Import Icons
 import LinkedInIcon from './icons/LinkedInIcon';
 import GitHubIcon from './icons/GitHubIcon';
 import EmailIcon from './icons/EmailIcon';
 import PhoneIcon from './icons/PhoneIcon';
+import { copyToClipboard } from '../utils/clipboard';
+import { toast } from 'react-toastify';
 
 const Header: React.FC = () => {
     return (
-        <header className="bg-gradient-to-r from-gray-800 to-gray-700 text-white p-6 md:p-8 lg:p-12">
-            <div className="container mx-auto flex flex-col items-center md:items-start">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
-                    Santiago Quintero
-                </h1>
-                <p className="text-lg md:text-xl lg:text-2xl mt-2">Full-Stack Developer</p>
-                <p className="text-sm md:text-base lg:text-lg mt-1 text-center md:text-left">
-                    Next.js | React | React Native | Django | Python | TypeScript | JavaScript | Vue | Nuxt | HTML | CSS | Mobile Apps | Web Apps
-                </p>
-                <div className="mt-6 flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 text-sm md:text-base">
-                    {/* Email Link */}
-                    <a
-                        href="mailto:danielsantiago1230@gmail.com"
-                        className="hover:underline flex items-center"
-                        aria-label="Email"
-                    >
-                        <EmailIcon className="w-5 h-5 text-yellow-500"/>
-                        <span className="ml-2">danielsantiago1230@gmail.com</span>
-                    </a>
+        <header className="sticky top-0 z-50 bg-brand-dark shadow-lg">
+            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-3 md:py-5 px-4 md:px-8">
+                {/* Right-aligned Navigation */}
+                <nav className="w-full md:w-auto mb-2 md:mb-0 order-1 ">
+                    <ul className="flex justify-center md:justify-start space-x-3 md:space-x-8 overflow-x-auto overflow-y-hidden text-sm md:text-base">
+                        {['Summary', 'Skills', 'Experience', 'Education'].map((item) => (
+                            <li key={item} className="flex-shrink-0">
+                                <Link
+                                    to={item.toLowerCase()}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                    className="text-white hover:text-brand-primary cursor-pointer font-medium px-2 py-1 md:px-3 md:py-2 rounded-md hover:bg-brand-accent-dark transition-colors"
+                                    activeClass="text-brand-primary font-bold bg-brand-accent-dark"
+                                >
+                                    {item}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
 
-                    {/* Phone Link */}
-                    <a
-                        href="tel:+573137758974"
-                        className="hover:underline flex items-center"
-                        aria-label="Phone"
-                    >
-                        {/* Phone SVG */}
-                        <PhoneIcon className="w-5 h-5 text-green-500"/>
-                        <span className="ml-2">+573137758974</span>
-                    </a>
-
-                    {/* LinkedIn Link */}
+                {/* Right-aligned Contact & Social Icons */}
+                <div className="flex space-x-4 md:space-x-6 order-2">
+                    {/* Socials */}
                     <a
                         href="https://www.linkedin.com/in/danielsantiagoquinteroariza/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:underline flex items-center transition-colors duration-300"
+                        className="text-brand-primary hover:text-brand-accent transition-colors"
                         aria-label="LinkedIn"
                     >
-                        <LinkedInIcon className="w-5 h-5" />
-                        <span className="ml-2">LinkedIn</span>
+                        <LinkedInIcon className="w-5 h-5 md:w-6 md:h-6" />
                     </a>
-
-                    {/* GitHub Link */}
                     <a
                         href="https://github.com/danielsantiago1230"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:underline flex items-center transition-colors duration-300"
+                        className="text-brand-primary hover:text-brand-accent transition-colors"
                         aria-label="GitHub"
                     >
-                        <GitHubIcon className="w-5 h-5" />
-                        <span className="ml-2">GitHub</span>
+                        <GitHubIcon className="w-5 h-5 md:w-6 md:h-6" />
+                    </a>
+
+                    {/* Contacts */}
+                    <button
+                        onClick={async () => {
+                            const success = await copyToClipboard('danielsantiago1230@gmail.com');
+                            if (success) {
+                                toast.success('Email copied to clipboard!');
+                            } else {
+                                toast.error('Failed to copy email');
+                            }
+                        }}
+                        className="text-brand-primary hover:text-brand-accent transition-colors"
+                        aria-label="Copy email to clipboard"
+                    >
+                        <EmailIcon className="w-5 h-5 md:w-6 md:h-6" />
+                    </button>
+                    <a
+                        href="tel:+573137758974"
+                        className="text-brand-primary hover:text-brand-accent transition-colors"
+                        aria-label="Phone"
+                    >
+                        <PhoneIcon className="w-5 h-5 md:w-6 md:h-6" />
                     </a>
                 </div>
             </div>

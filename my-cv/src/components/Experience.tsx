@@ -8,7 +8,7 @@ interface ExperienceProps {
 
 const Experience: React.FC<ExperienceProps> = ({ years, months }) => {
     return (
-        <section className="my-8 px-4 md:px-8 lg:px-16">
+        <section className="my-8 px-4 md:px-8 lg:px-16" id="experience">
             <h2 className="text-4xl font-heading font-bold mb-2 text-center md:text-left">Work Experience</h2>
             <h3 id="time" className="text-xl font-heading font-bold mb-8 text-center md:text-left">
                 ({years} years{months > 0 ? ` & ${months} months` : ''})

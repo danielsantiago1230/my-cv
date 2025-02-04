@@ -3,7 +3,7 @@ import Card from './Card';
 
 const Skills: React.FC = () => {
     return (
-        <section className="my-8 px-4 md:px-8 lg:px-16">
+        <section className="my-8 px-4 md:px-8 lg:px-16" id="skills">
             <h2 className="text-4xl font-heading font-bold mb-8 text-center md:text-left">Skills</h2>
 
             <Card
