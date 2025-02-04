@@ -35,15 +35,22 @@ const Footer: React.FC = () => {
                         <span>danielsantiago1230@gmail.com</span>
                     </button>
 
-                    {/* Phone Link */}
-                    <a
-                        href="tel:+573137758974"
+                    {/* Phone Button */}
+                    <button
+                        onClick={async () => {
+                            const success = await copyToClipboard('+573137758974');
+                            if (success) {
+                                toast.success('Phone number copied to clipboard!');
+                            } else {
+                                toast.error('Failed to copy phone number');
+                            }
+                        }}
                         className="hover:text-brand-primary transition-colors flex items-center"
-                        aria-label="Phone"
+                        aria-label="Copy phone number to clipboard"
                     >
                         <PhoneIcon className="w-5 h-5 text-brand-primary mr-2" />
                         <span>+573137758974</span>
-                    </a>
+                    </button>
 
                     {/* LinkedIn Link */}
                     <a

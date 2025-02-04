@@ -70,13 +70,20 @@ const Header: React.FC = () => {
                     >
                         <EmailIcon className="w-5 h-5 md:w-6 md:h-6" />
                     </button>
-                    <a
-                        href="tel:+573137758974"
+                    <button
+                        onClick={async () => {
+                            const success = await copyToClipboard('+573137758974');
+                            if (success) {
+                                toast.success('Phone number copied to clipboard!');
+                            } else {
+                                toast.error('Failed to copy phone number');
+                            }
+                        }}
                         className="text-brand-primary hover:text-brand-accent transition-colors"
-                        aria-label="Phone"
+                        aria-label="Copy phone number to clipboard"
                     >
                         <PhoneIcon className="w-5 h-5 md:w-6 md:h-6" />
-                    </a>
+                    </button>
                 </div>
             </div>
         </header>
