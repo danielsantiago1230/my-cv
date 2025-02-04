@@ -9,7 +9,7 @@ import PhoneIcon from './icons/PhoneIcon';
 const Header: React.FC = () => {
     return (
         <header className="sticky top-0 z-50 bg-brand-dark shadow-lg">
-            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-3 px-4 md:px-8">
+            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-3 md:py-5 px-4 md:px-8">
                 {/* Right-aligned Navigation */}
                 <nav className="w-full md:w-auto mb-2 md:mb-0 order-1 ">
                     <ul className="flex justify-center md:justify-start space-x-3 md:space-x-8 overflow-x-auto overflow-y-hidden text-sm md:text-base">
