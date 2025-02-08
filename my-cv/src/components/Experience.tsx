@@ -52,29 +52,11 @@ const Experience: React.FC<ExperienceProps> = ({ years, months }) => {
                         'Integrated MeasureOne for insurance validation and document management.',
                         'Collaborated with Bundee for seamless booking system integration, enabling up to 1–2 weekly reservations during the startup phase.',
                         'Delivered cross-platform compatibility and smooth performance, maintaining a 99% uptime across iOS and Android platforms.',
-                    ]}
-                />
-
-                <Card
-                    title="Flux Backend Development (Django)"
-                    links={[]}
-                    subtitle=""
-                    date="Nov 2022 - Dec 2024"
-                    description={[
                         'Engineered a secure backend with Django, ensuring seamless API integrations with tools like IDScan, MeasureOne, and Stripe, supporting the app’s successful production launch.',
                         'Developed a secure one-time code generation system for managing car key vaults, ensuring 100% access control accuracy.',
                         'Built APIs for smart car connectivity using OAuth, enabling real-time updates for battery levels, geolocation, and locking/unlocking vehicles.',
                         'Integrated a GPS API service for vehicles lacking smart connectivity, enabling real-time tracking and monitoring.',
                         'Implemented robust security measures, including JWT-based authentication and role-based access controls, resulting in zero reported security incidents.',
-                    ]}
-                />
-
-                <Card
-                    title="Fleet Mobile App (React Native) – Admin-Only Application"
-                    links={[]}
-                    subtitle=""
-                    date="Nov 2022 - Dec 2024"
-                    description={[
                         'Developed and maintained the Fleet mobile app to manage Flux features and vehicles',
                         'Google Maps for charger points and car rental stations.',
                         'A browser-based control panel for Bundee\'s admin web portal.',
