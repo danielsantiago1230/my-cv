@@ -84,7 +84,6 @@ const Experience: React.FC<ExperienceProps> = ({ years, months }) => {
                 <Card
                     title="Front End Developer at Alluxi"
                     links={[
-                        { label: "Garre Web App", url: "http://garre-front-stage.s3-website-us-east-1.amazonaws.com/" },
                         { label: "Alluxi", url: "https://www.alluxi.com/" }
                     ]}
                     subtitle="Garre Web Application"
