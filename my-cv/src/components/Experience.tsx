@@ -17,68 +17,42 @@ const Experience: React.FC<ExperienceProps> = ({ years, months }) => {
                 <Card
                     title="Full Stack Developer at Alluxi"
                     links={[
-                        { label: "WMA Web App", url: "https://intensity.virtualproshops.com/us" },
+                        { label: "WMA Web App", url: "https://wma.virtualproshops.com/us" },
                         { label: "Alluxi", url: "https://www.alluxi.com/" }
                     ]}
                     subtitle="WMA Web App"
                     date="Dec 2024 - Present"
                     description={[
-                        'Contributed to the WMA Web App, built with Medusa.js for both frontend and backend, preparing the app for launch.',
-                        'Developed responsive components such as product modals, collections, and size charts, implementing Figma-based designs.',
-                        'Integrated AWS S3 for dynamic media handling and optimized compatibility with Next.js 13.',
-                        'Enhanced Medusa APIs with features like order filters (processed_by_wma) and student ID validation.',
-                        'Streamlined collections logic, enabling dynamic previews and modals for product selection.',
-                        'Fixed critical bugs and conducted extensive staging tests to validate features before production deployment.',
+                        'Led development of a multi-store, multi-vendor e-commerce platform built with Medusa.js and Next.js 13, supporting multiple storefronts from a single backend.',
+                        'Extended Medusa APIs for store-specific data segregation (customers, orders, products) and secure admin-level visibility across all stores.',
+                        'Integrated UPS for dynamic shipping rates, TaxCloud for automated tax calculations across all U.S. regions, and Stripe Connect for split payments between vendors.',
+                        'Implemented transactional email workflows using SendGrid and Freshdesk ticket automation for support requests.',
+                        'Connected Payload CMS as a secondary validation service for customer data and store configurations.',
+                        'Deployed AWS S3 for scalable media storage and optimized front-end performance with dynamic caching and CDN delivery.',
+                        'Integrated Yotpo to handle rewards and loyalty points through event-based triggers (Drive Events).',
+                        'Implemented reCAPTCHA to secure contact forms and reduce spam submissions.',
+                        'Collaborated with the CTO to automate new store deployments on AWS, reducing setup time from hours to under 10 minutes.'
                     ]}
                 />
 
                 <Card
-                    title="Full Stack Developer at Alluxi"
+                    title="Full-Stack Developer at Alluxi"
+
                     links={[
                         { label: "Flux EV Web App", url: "https://app.fluxev.city/" },
                         { label: "Flux EV App Store", url: "https://apps.apple.com/ec/app/flux-ev/id1603001875" },
                         { label: "Alluxi", url: "https://www.alluxi.com/" }
                     ]}
-                    subtitle="Mobile Flux app & Flux Web app"
+                    subtitle="Flux EV Web & Mobile App"
                     date="Nov 2022 - Dec 2024"
                     description={[
-                        'Developed and maintained the Flux mobile app using React Native, integrating features like Google Maps for locating charger points and car rental stations.',
-                        'Utilized Google Places API to check the availability of electric charging stations.',
-                        'Implemented Stripe for secure payment processing, supporting over 100 active users during the startup phase.',
-                        'Leveraged Firebase for user authentication, real-time databases, and push notifications across devices.',
-                        'Integrated Twilio for SMS code validation and notifications, with a real-time chat feature that resolves support queries in under 24 hours on average.',
-                        'Managed contact information and enhanced customer engagement using HubSpot CRM.',
-                        'Implemented IDScan for license validation, reducing manual processing and improving data accuracy.',
-                        'Integrated MeasureOne for insurance validation and document management.',
-                        'Collaborated with Bundee for seamless booking system integration, enabling up to 1–2 weekly reservations during the startup phase.',
-                        'Delivered cross-platform compatibility and smooth performance, maintaining a 99% uptime across iOS and Android platforms.',
-                    ]}
-                />
-
-                <Card
-                    title="Flux Backend Development (Django)"
-                    links={[]}
-                    subtitle=""
-                    date="Nov 2022 - Dec 2024"
-                    description={[
-                        'Engineered a secure backend with Django, ensuring seamless API integrations with tools like IDScan, MeasureOne, and Stripe, supporting the app’s successful production launch.',
-                        'Developed a secure one-time code generation system for managing car key vaults, ensuring 100% access control accuracy.',
-                        'Built APIs for smart car connectivity using OAuth, enabling real-time updates for battery levels, geolocation, and locking/unlocking vehicles.',
-                        'Integrated a GPS API service for vehicles lacking smart connectivity, enabling real-time tracking and monitoring.',
-                        'Implemented robust security measures, including JWT-based authentication and role-based access controls, resulting in zero reported security incidents.',
-                    ]}
-                />
-
-                <Card
-                    title="Fleet Mobile App (React Native) – Admin-Only Application"
-                    links={[]}
-                    subtitle=""
-                    date="Nov 2022 - Dec 2024"
-                    description={[
-                        'Developed and maintained the Fleet mobile app to manage Flux features and vehicles',
-                        'Google Maps for charger points and car rental stations.',
-                        'A browser-based control panel for Bundee\'s admin web portal.',
-                        'A GPS API service for real-time vehicle tracking and management, improving operational oversight.',
+                        'Developed and maintained the Flux EV platform — a web and mobile application for renting electric cars and locating charging stations in Austin, Texas.',
+                        'Built the mobile app with React Native and the web app with React, integrating Google Maps and Google Places APIs for real-time location and availability tracking.',
+                        'Implemented Stripe for secure payments, Firebase for authentication and notifications, and Twilio for SMS verification and real-time customer chat.',
+                        'Engineered a robust Django backend with APIs for smart car connectivity, GPS tracking, and secure key access using OAuth and JWT-based authentication.',
+                        'Integrated third-party services like IDScan and MeasureOne for license and insurance validation, ensuring compliance and reducing manual review time.',
+                        'Created an internal fleet management app for admins to monitor vehicles in real-time, enhancing operational visibility and support response efficiency.',
+                        'Delivered production-ready deployments with 99% uptime across iOS, Android, and web, supporting 100+ active users during the startup phase.'
                     ]}
                 />
 

@@ -4,7 +4,6 @@ import { Link } from 'react-scroll';
 import LinkedInIcon from './icons/LinkedInIcon';
 import GitHubIcon from './icons/GitHubIcon';
 import EmailIcon from './icons/EmailIcon';
-import PhoneIcon from './icons/PhoneIcon';
 import { copyToClipboard } from '../utils/clipboard';
 import { toast } from 'react-toastify';
 
@@ -70,13 +69,6 @@ const Header: React.FC = () => {
                     >
                         <EmailIcon className="w-5 h-5 md:w-6 md:h-6" />
                     </button>
-                    <a
-                        href="tel:+573137758974"
-                        className="text-brand-primary hover:text-brand-accent transition-colors"
-                        aria-label="Phone"
-                    >
-                        <PhoneIcon className="w-5 h-5 md:w-6 md:h-6" />
-                    </a>
                 </div>
             </div>
         </header>

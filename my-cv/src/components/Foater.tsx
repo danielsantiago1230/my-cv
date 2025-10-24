@@ -3,7 +3,6 @@ import React from 'react';
 import LinkedInIcon from './icons/LinkedInIcon';
 import GitHubIcon from './icons/GitHubIcon';
 import EmailIcon from './icons/EmailIcon';
-import PhoneIcon from './icons/PhoneIcon';
 import { copyToClipboard } from '../utils/clipboard';
 import { toast } from 'react-toastify';
 
@@ -34,16 +33,6 @@ const Footer: React.FC = () => {
                         <EmailIcon className="w-5 h-5 text-brand-primary mr-2" />
                         <span>danielsantiago1230@gmail.com</span>
                     </button>
-
-                    {/* Phone Link */}
-                    <a
-                        href="tel:+573137758974"
-                        className="hover:text-brand-primary transition-colors flex items-center"
-                        aria-label="Phone"
-                    >
-                        <PhoneIcon className="w-5 h-5 text-brand-primary mr-2" />
-                        <span>+573137758974</span>
-                    </a>
 
                     {/* LinkedIn Link */}
                     <a
