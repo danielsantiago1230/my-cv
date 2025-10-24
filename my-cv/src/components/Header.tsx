@@ -4,7 +4,6 @@ import { Link } from 'react-scroll';
 import LinkedInIcon from './icons/LinkedInIcon';
 import GitHubIcon from './icons/GitHubIcon';
 import EmailIcon from './icons/EmailIcon';
-import PhoneIcon from './icons/PhoneIcon';
 import { copyToClipboard } from '../utils/clipboard';
 import { toast } from 'react-toastify';
 
@@ -69,20 +68,6 @@ const Header: React.FC = () => {
                         aria-label="Copy email to clipboard"
                     >
                         <EmailIcon className="w-5 h-5 md:w-6 md:h-6" />
-                    </button>
-                    <button
-                        onClick={async () => {
-                            const success = await copyToClipboard('+573137758974');
-                            if (success) {
-                                toast.success('Phone number copied to clipboard!');
-                            } else {
-                                toast.error('Failed to copy phone number');
-                            }
-                        }}
-                        className="text-brand-primary hover:text-brand-accent transition-colors"
-                        aria-label="Copy phone number to clipboard"
-                    >
-                        <PhoneIcon className="w-5 h-5 md:w-6 md:h-6" />
                     </button>
                 </div>
             </div>

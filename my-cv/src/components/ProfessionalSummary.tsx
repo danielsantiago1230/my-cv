@@ -16,7 +16,7 @@ const ProfessionalSummary: React.FC<ExperienceProps> = ({ years }) => {
                     subtitle=""
                     date=""
                     description={[
-                        `Full-stack developer with almost 3 years of experience designing and implementing scalable, user-focused web and mobile applications. Proficient in modern frameworks like React,React Native, Next.js, and Django, with expertise in API integration, performance optimization, and delivering seamless cross-platform solutions. Demonstrated success in building secure backend systems and dynamic frontend components and managing complex technical challenges in agile environments. Passionate about leveraging technology to enhance user experiences and drive business outcomes. Bilingual in Spanish and English, with excellent collaboration skills and a commitment to continuous learning.`,
+                        `Full-stack developer with over 3 years of experience building scalable, production-ready web and mobile applications. Skilled in modern frameworks like Next.js, React, Vue, Django, Node.js, and Medusa, with a strong focus on performance, security, and user experience. Proven success leading the development of a multi-store e-commerce platform—launching multiple storefronts from a single backend—and delivering a car-rental and charging app used across Austin, Texas. Passionate about creating clean, maintainable code and collaborating on complex projects that bridge design, functionality, and business impact.`,
                     ]}
                 />
             </div>

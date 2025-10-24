@@ -11,11 +11,12 @@ const Skills: React.FC = () => {
                 subtitle=""
                 date=""
                 description={[
-                    'Core Skills: JavaScript, TypeScript, Python, SQL, NoSQL',
-                    'Frameworks:  Next.js, React, React Native, Django, Nuxt.js, Vue.js',
-                    'Tools & Platforms: Git, GitHub, Firebase, Stripe, Twilio, HubSpot',
-                    'Frontend Development: TailwindCSS, Bootstrap, Responsive Design, REST APIs',
-                    'Additional Skills: Authentication and Authorization (OAuth, JWT), Cloud Integrations, Unit and Integration Testing, Bilingual (Spanish and English)'
+                    'Core Skills: JavaScript (ES6+), TypeScript, Python, SQL, NoSQL',
+                    'Frameworks:  Next.js, React, React Native, Vue.js, Nuxt.js, Django, Node.js, Medusa, Payload CMS',
+                    'Tools & Platforms: Git, GitHub, Jira, AWS (S3, EC2), Firebase, Stripe, Twilio, HubSpot, SendGrid',
+                    'Frontend Development: Tailwind CSS, Bootstrap, Responsive Design, Component Architecture, REST APIs, API Integration',
+                    'Backend & Cloud: Authentication & Authorization (OAuth, JWT), Cloud Integrations, API Design, Performance Optimization, Unit & Integration Testing',
+                    'Additional Skills: Bilingual (Spanish & English), Agile Collaboration, CI/CD Workflow Experience'
                 ]}
                 links={[]}
             />
